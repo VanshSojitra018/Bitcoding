@@ -61,13 +61,13 @@ const Faq = () => {
           <span className="mb-[10px] text-[#1296df] uppercase font-medium">
             See Our Faqs
           </span>
-          <h2 className="text-[40px] leading-[125%] font-bold">
+          <h2 className="text-[30px] leading-[125%] font-bold">
             Secure Your Business & <br /> Ensure 24/7 High Availability
           </h2>
         </div>
 
         {/* Limit width and center */}
-        <div className="max-w-7xl mx-auto space-y-4">
+        <div className="max-w-7xl mx-auto space-y-4 ">
           {faqs.map((faq, index) => (
             <FAQBack
               key={index}
