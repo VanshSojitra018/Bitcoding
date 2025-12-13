@@ -98,12 +98,12 @@ const Navbar = () => {
         <div className="z-[100] transition-all duration-300 bg-white">
           <div className="px-[130px] w-full mx-auto">
             <div className="menu-wrapper">
-              <div className="flex items-center justify-between py-[10px]">
+              <div className="flex items-center justify-between py-[10px] ">
                 <div className="header-left">
                   <div className="logo md1:-ml-16 sm1:-ml-16 sm
                   -ml-24">
                     <a href="/">
-                      <img src={img} alt="Logo" />
+                      <img src={img} alt="Logo"/>
                     </a>
                   </div>
                 </div>
@@ -696,7 +696,7 @@ const Navbar = () => {
     z-[99999] overflow-y-scroll transition-transform duration-[450ms] ease-in-out
     ${isOpen ? "translate-x-0" : "translate-x-full"}`}
                         >
-                          <div className="info-open-wrapper relative h-full py-8 px-8">
+                          <div className="info-open-wrapper relative h-full py-8 px-12">
                             <div className="info-open-contant">
                               <div className="open-info-top flex justify-between items-center mb-12">
                                 <div className="open-top-logo">
@@ -715,7 +715,7 @@ const Navbar = () => {
                                 </div>
                               </div>
                               {/* Mobile menu start */}
-                              <div className="mobile-menu block 2xl:hidden mb-3 overflow-visible">
+                              <div className="mobile-menu block 2xl:hidden mb-3 overflow-visible text-[14px] xs:text-[15px] sm:text-[17px]">
                                 <ul>
                                   {/* Services / Star Services Toggle */}
                                   <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 px-4 hover:text-blue-500 transition-colors duration-300">
@@ -1541,7 +1541,7 @@ const Navbar = () => {
                               </div>
                               {/* Mobile menu end */}
 
-                              <div className="info-open-contact mt-[20px]">
+                              <div className="info-open-contact mt-[20px] px-2 xs:px-4">
                                 <h4 className="text-[20px] font-bold leading-[130%]">
                                   Contact Info
                                 </h4>
@@ -1631,7 +1631,7 @@ const Navbar = () => {
                                     </span>
                                   </a>
                                 </div>
-                                <div className="social-icon mt-[30px] flex items-center gap-[10px]">
+                                <div className="social-icon mt-[30px] pb-5 flex items-center gap-[10px]">
                                   <a
                                     href="https://www.facebook.com/Bitcodings"
                                     target="_blank"
