@@ -71,7 +71,7 @@ const ServicePage = () => {
       <PageHeader title={"Services"} subtitle={"Services"} />
 
       <section
-        className="pt-[60px] sm:pt-[80px] lg:pt-[100px] pb-1 bg-no-repeat bg-cover bg-center relative"
+        className="pt-[60px] sm:pt-[80px] lg:pt-[100px] pb-1 relative"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
         <div className="container mx-auto px-4">
