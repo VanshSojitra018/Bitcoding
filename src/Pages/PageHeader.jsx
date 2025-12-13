@@ -1,7 +1,7 @@
 import React from "react";
-import pageheader from "../assets/PageHeader.jpg";
-import pageheader1 from "../assets/PageHeader1.png";
-import pageheader2 from "../assets/PageHeader2.png";
+import pageheader from "../assets/pageheaderr.jpg";
+import pageheader1 from "../assets/pageheader1.png";
+import pageheader2 from "../assets/pageheader2.png";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 
