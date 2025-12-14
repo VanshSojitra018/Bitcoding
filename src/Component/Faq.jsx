@@ -49,16 +49,16 @@ const Faq = () => {
 
   return (
     <section
-      className="bg-cover py-[130px] relative"
+      className="bg-cover py-[147px] relative"
       style={{ backgroundImage: `url(${faqBg})` }}
     >
       <div className="right-shape absolute top-0 right-0">
         <img src={faq1} alt="faq1" />
       </div>
 
-      <div className="container mx-auto px-4">
-        <div className="section-title text-center mb-[30px]">
-          <span className="mb-[10px] text-[#1296df] uppercase font-medium">
+      <div className="container mx-auto px-4 -mt-9">
+        <div className="section-title text-center mb-[40px]">
+          <span className="mb-[10px] leading-10 text-[#1296df] uppercase font-medium">
             See Our Faqs
           </span>
           <h2 className="text-[30px] leading-[125%] font-bold">

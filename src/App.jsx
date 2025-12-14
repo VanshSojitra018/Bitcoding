@@ -11,7 +11,7 @@ import Blog from "./Component/Blog";
 import Faq from "./Component/Faq";
 import ProjectSlider from "./Component/ProjectSlider";
 import { Route, Routes } from "react-router-dom";
-import ServicePage from "./Pages/ServicePage";
+import ServicePage from "./Component/ServicePage";
 
 
 const App = () => {

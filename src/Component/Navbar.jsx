@@ -87,7 +87,6 @@ const Navbar = () => {
       submenu: [
         {
           name: "Star Services",
-          link: "/Star-Services",
           submenu: [
             { name: "AI/ML", link: "/AI-ML" },
             { name: "Automation", link: "/Automation" },
@@ -96,7 +95,6 @@ const Navbar = () => {
         },
         {
           name: "Digital Workplace",
-          link: "/Digital-Workplace",
           submenu: [
             { name: "Web Development", link: "/Web-development" },
             { name: "Mobile App Development", link: "/Mobile-app-development" },
@@ -108,7 +106,6 @@ const Navbar = () => {
         },
         {
           name: "Platform",
-          link: "/Platform",
           submenu: [
             { name: "Microsoft Azure", link: "/Microsoft-Azure" },
             { name: "Amazon Web Services", link: "/Amazon-web-service" },
@@ -137,7 +134,6 @@ const Navbar = () => {
       submenu: [
         {
           name: "Backend",
-          link: "/Backend",
           submenu: [
             { name: "Python", link: "/Python" },
             { name: "Nord.Js", link: "/Nord.Js" },
@@ -145,7 +141,6 @@ const Navbar = () => {
         },
         {
           name: "Frontend",
-          link: "/Frontend",
           submenu: [
             { name: "UI/UX", link: "/UI/UX" },
             { name: "Web Design", link: "/Web Design" },
@@ -155,7 +150,6 @@ const Navbar = () => {
         },
         {
           name: "Mobile",
-          link: "/Mobile",
           submenu: [
             { name: "IOS Native", link: "/IOS Native" },
             { name: "Android Native", link: "/Android Native" },
@@ -164,7 +158,6 @@ const Navbar = () => {
         },
         {
           name: "Cloud",
-          link: "/Cloud",
           submenu: [
             { name: "Azure", link: "/Azure" },
             { name: "AWS", link: "/AWS" },
@@ -173,7 +166,6 @@ const Navbar = () => {
         },
         {
           name: "Q/A",
-          link: "/Q/A",
           submenu: [
             { name: "Automation Testing", link: "/Automation Testing" },
             { name: "Software Testing", link: "/Software Testing" },
@@ -181,7 +173,6 @@ const Navbar = () => {
         },
         {
           name: "Platform",
-          link: "/Platform",
           submenu: [
             { name: "Shopify", link: "/Shopify" },
             { name: "Wordpress", link: "/Wordpress" },

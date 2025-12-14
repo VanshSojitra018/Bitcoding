@@ -1,12 +1,12 @@
 import React from "react";
-import PageHeader from "./PageHeader";
+import PageHeader from "../Pages/PageHeader.jsx";
 import icon1 from "../assets/s-icon-1.svg";
 import icon2 from "../assets/s-icon-2.svg";
 import icon3 from "../assets/s-icon-3.svg";
 import icon4 from "../assets/s-icon-4.svg";
-import heroBg from "../assets/hero-bg.jpg";
 import { Link } from "react-router-dom";
-
+import Faq from "./Faq.jsx";
+import TalkToUse from "../Pages/TalkToUse.jsx";
 
 const ServicePage = () => {
   const servicesData = [
@@ -72,8 +72,8 @@ const ServicePage = () => {
     <>
       <PageHeader title={"Services"} subtitle={"Services"} />
 
-    <section
-  className="
+      <section
+        className="
     pt-[60px] sm:pt-[80px] lg:pt-[100px]
     pb-[60px]
     relative
@@ -81,8 +81,7 @@ const ServicePage = () => {
     bg-center
     bg-no-repeat
   "
-  style={{ backgroundImage: `url(${heroBg})` }}
->
+      >
         <div className="container mx-auto px-4">
           <div className="section-title-area flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
             <div className="section-title text-center mx-auto mb-[20px] lg:mb-[30px]">
@@ -98,7 +97,7 @@ const ServicePage = () => {
 
         {/* ------------ SAME CARD STRUCTURE AS ORIGINAL ------------ */}
         <div className="container mx-auto px-4">
-          <div className="service-wrapper mb-[60px] sm:mb-[100px] lg:mb-[187px]">
+          <div className="service-wrapper mb-[60px] sm:mb-[100px] lg:mb-[100px]">
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {servicesData.map((service, index) => (
                 <div key={index} className="flex justify-center">
@@ -106,7 +105,7 @@ const ServicePage = () => {
                     className="
                       w-full max-w-[325px] service-box-item group mt-[30px] bg-white 
                       py-[30px] sm:py-[35px] px-[25px] sm:px-[30px] relative z-10 rounded-[8px] 
-                      transition-all duration-300 ease-in-out overflow-hidden
+                      transition-all duration-300 ease-in-out overflow-hidden shadow-xl
                     "
                   >
                     <div className="icon relative z-10 inline-block ml-3 sm:ml-5 my-4 sm:my-5">
@@ -133,10 +132,11 @@ const ServicePage = () => {
                 </div>
               ))}
             </div>
-
           </div>
         </div>
+        <Faq />
       </section>
+      <TalkToUse />
     </>
   );
 };

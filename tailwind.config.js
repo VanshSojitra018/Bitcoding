@@ -16,10 +16,15 @@ export default {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
+        upDown: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' }, // move up 20px
+        },
       },
       animation: {
         'float-bob-y': 'float-bob-y 3s ease-in-out infinite',
         cir36: 'cir36 10s linear infinite',
+        'up-down': 'upDown 2s ease-in-out infinite',
       },
       screens: {
         sm: "320px",
