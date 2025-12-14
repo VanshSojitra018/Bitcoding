@@ -32,7 +32,7 @@ const PageHeader = ({ title, subtitle }) => {
 
       <div className="container mx-auto px-4">
         <div className="page-heading relative py-[50px] text-left z-10">
-          <h1 className="text-white text-[65px] relative z-10 mb-[15px] font-bold">
+          <h1 className="text-white text-[28px] sm:text-[40px] lg:text-[65px] font-bold">
             {title}
           </h1>
 

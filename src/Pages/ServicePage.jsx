@@ -5,6 +5,8 @@ import icon2 from "../assets/s-icon-2.svg";
 import icon3 from "../assets/s-icon-3.svg";
 import icon4 from "../assets/s-icon-4.svg";
 import heroBg from "../assets/hero-bg.jpg";
+import { Link } from "react-router-dom";
+
 
 const ServicePage = () => {
   const servicesData = [
@@ -70,10 +72,17 @@ const ServicePage = () => {
     <>
       <PageHeader title={"Services"} subtitle={"Services"} />
 
-      <section
-        className="pt-[60px] sm:pt-[80px] lg:pt-[100px] pb-1 relative"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      >
+    <section
+  className="
+    pt-[60px] sm:pt-[80px] lg:pt-[100px]
+    pb-[60px]
+    relative
+    bg-cover
+    bg-center
+    bg-no-repeat
+  "
+  style={{ backgroundImage: `url(${heroBg})` }}
+>
         <div className="container mx-auto px-4">
           <div className="section-title-area flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
             <div className="section-title text-center mx-auto mb-[20px] lg:mb-[30px]">
@@ -106,19 +115,19 @@ const ServicePage = () => {
 
                     <div className="content mt-4 sm:mt-5 relative z-10">
                       <h4 className="text-[#292f32] text-[18px] sm:text-[20px] mb-[5px] font-bold transition-colors duration-300 group-hover:text-white">
-                        <a href={service.link}>{service.title}</a>
+                        <Link to={service.link}>{service.title}</Link>
                       </h4>
 
                       <p className="text-[#292f32] text-[14px] sm:text-[16px] transition-colors duration-300 group-hover:text-white">
                         {service.description}
                       </p>
 
-                      <a
-                        href={service.link}
+                      <Link
+                        to={service.link}
                         className="theme-btn-2 flex items-center gap-2 font-semibold text-[14px] sm:text-[16px] text-[#585858] mt-3 transition-colors duration-300 group-hover:text-white"
                       >
                         Read More →
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
