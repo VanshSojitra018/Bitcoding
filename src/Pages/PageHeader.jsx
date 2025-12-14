@@ -9,7 +9,7 @@ const PageHeader = ({ title, subtitle }) => {
   return (
     <div
       className="
-        relative bg-no-repeat bg-cover bg-center py-[50px]
+        relative bg-no-repeat bg-cover bg-center py-[50px] overflow-hidden
         before:content-[''] before:absolute before:inset-0
         before:opacity-75
         before:bg-[linear-gradient(270.07deg,rgba(18,150,223,0.7)_-50%,#292f32_99.95%)]
@@ -24,18 +24,15 @@ const PageHeader = ({ title, subtitle }) => {
           className="z-10 relative w-full h-auto object-contain"
         />
       </div>
-
       {/* RIGHT DECOR SHAPE */}
-      <div className="line-shape absolute top-0 bottom-0 right-0">
-        <img src={pageheader2} alt="pageheader2" className="w-full h-full" />
+      <div className="line-shape absolute top-0 bottom-0 right-0 overflow-hidden">
+        <img src={pageheader2} alt="pageheader2" className="w-full h-full object-cover" />
       </div>
-
       <div className="container mx-auto px-4">
         <div className="page-heading relative py-[50px] text-left z-10">
           <h1 className="text-white text-[28px] sm:text-[40px] lg:text-[65px] font-bold">
             {title}
           </h1>
-
           <ul className="pt-5 flex items-center gap-2">
             <li className="text-white font-semibold capitalize">
               <Link
