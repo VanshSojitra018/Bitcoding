@@ -12,37 +12,37 @@ import Faq from "./Component/Faq";
 import ProjectSlider from "./Component/ProjectSlider";
 import { Route, Routes } from "react-router-dom";
 import ServicePage from "./Component/ServicePage";
-
+import AiMl from "./Component/AiMl";
 
 const App = () => {
   return (
-   <>
-  <Navbar />
+    <>
+      <Navbar />
 
-  <Routes>
-    <Route
-      path="/"
-      element={
-        <>
-          <Home />
-          <Silder />
-          <AboutSection />
-          <Service />
-          <Achivement />
-          <ProjectSlider />
-          <Faq />
-          <Blog />
-          <Cta />
-        </>
-      }
-    />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <Silder />
+              <AboutSection />
+              <Service />
+              <Achivement />
+              <ProjectSlider />
+              <Faq />
+              <Blog />
+              <Cta />
+            </>
+          }
+        />
 
-    <Route path="/service" element={<ServicePage />} />
-  </Routes>
+        <Route path="/service" element={<ServicePage />} />
+        <Route path="/ai-ml" element={<AiMl />} />
+      </Routes>
 
-  <Footer />
-</>
-
+      <Footer />
+    </>
   );
 };
 

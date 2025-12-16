@@ -27,7 +27,7 @@ const TalkToUse = () => {
           }
         `}
       </style>
-      <section className="pt-12 sm:pt-16 md1:pt-20 lg1:pt-[100px] pb-12 sm:pb-16 md1:pb-20 lg1:pb-24 bg-white px-3 sm:px-4">
+      <section className="pt-12 sm:pt-16 md1:pt-20 lg1:pt-[190px] pb-12 sm:pb-16 md1:pb-20 lg1:pb-24 bg-white px-3 sm:px-4">
         <div className="container mx-auto max-w-[1400px]">
           <div className="relative z-10 overflow-hidden w-full h-full rounded-lg border bg-[linear-gradient(172deg,#1296DF_6.23%,#1F5B7C_131.99%,#22506A_146.31%,#292F32_165.42%)] mt-0 lg1:mt-[-140px] p-4 sm:p-5 md1:p-6">
             {/* Arrow shape - visible on all screens */}

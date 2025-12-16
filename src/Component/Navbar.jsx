@@ -88,9 +88,9 @@ const Navbar = () => {
         {
           name: "Star Services",
           submenu: [
-            { name: "AI/ML", link: "/AI-ML" },
-            { name: "Automation", link: "/Automation" },
-            { name: "Web/App Scraping", link: "/Web-app Scraping" },
+            { name: "AI/ML", link: "/ai-ml" },
+            { name: "Automation", link: "/automation" },
+            { name: "Web/App Scraping", link: "/web-app Scraping" },
           ],
         },
         {
