@@ -411,7 +411,7 @@ const Navbar = () => {
                                   }`}
                                 >
                                   <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
-                                    <a href="/Star-services" className="font-medium text-[17px]">
+                                    <a  className="font-medium text-[17px]">
                                       Star Services
                                     </a>
                                     <button onClick={() => toggleMenu("isInsideStarOpen")}>
@@ -448,7 +448,7 @@ const Navbar = () => {
                                   {/* Digital Workplace */}
                                   <li className="flex flex-col">
                                     <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
-                                      <a href="/Digital-workplace" className="font-medium text-[17px]">
+                                      <a  className="font-medium text-[17px]">
                                         Digital Workplace
                                       </a>
                                       <button onClick={() => toggleMenu("isDigitalOpen")}>
