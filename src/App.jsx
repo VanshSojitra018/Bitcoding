@@ -11,8 +11,8 @@ import Blog from "./Component/Blog";
 import Faq from "./Component/Faq";
 import ProjectSlider from "./Component/ProjectSlider";
 import { Route, Routes } from "react-router-dom";
-import ServicePage from "./Component/ServicePage";
-import AiMl from "./Component/AiMl";
+import ServicePage from "./SubComponent/ServicePage";
+import AiMl from "./SubComponent/AiMl";
 
 const App = () => {
   return (

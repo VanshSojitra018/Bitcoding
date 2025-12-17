@@ -5,7 +5,7 @@ import icon2 from "../assets/s-icon-2.svg";
 import icon3 from "../assets/s-icon-3.svg";
 import icon4 from "../assets/s-icon-4.svg";
 import { Link } from "react-router-dom";
-import Faq from "./Faq.jsx";
+import Faq from "../Component/Faq.jsx";
 import TalkToUse from "../Pages/TalkToUse.jsx";
 
 const ServicePage = () => {

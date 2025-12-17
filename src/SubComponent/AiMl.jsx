@@ -4,6 +4,8 @@ import Silder from "../Component/Silder.jsx";
 import TalkToUse from "../Pages/TalkToUse.jsx";
 import RequestText from "../Pages/RequestText.jsx";
 import CoreValuePage from "../Pages/CoreValuePage.jsx";
+import OurValuePage from "../Pages/OurValuePage.jsx";
+import TechnologyPage from "../Pages/TechnologyPage.jsx";
 
 const AiMl = () => {
   return (
@@ -22,6 +24,8 @@ const AiMl = () => {
       />
       <Silder variant="light" />
       <CoreValuePage />
+      <OurValuePage />
+      <TechnologyPage />
       <TalkToUse />
     </>
   );
