@@ -13,6 +13,8 @@ import ProjectSlider from "./Component/ProjectSlider";
 import { Route, Routes } from "react-router-dom";
 import ServicePage from "./SubComponent/ServicePage";
 import AiMl from "./SubComponent/AiMl";
+import Automation from "./SubComponent/Automation";
+import WebScrapp from "./SubComponent/WebScrapping";
 
 const App = () => {
   return (
@@ -39,6 +41,9 @@ const App = () => {
 
         <Route path="/service" element={<ServicePage />} />
         <Route path="/ai-ml" element={<AiMl />} />
+        <Route path="/automation" element={<Automation />} />
+        <Route path="//web-app-scraping" element={<WebScrapp />} />
+
       </Routes>
 
       <Footer />

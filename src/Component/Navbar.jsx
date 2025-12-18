@@ -90,7 +90,7 @@ const Navbar = () => {
           submenu: [
             { name: "AI/ML", link: "/ai-ml" },
             { name: "Automation", link: "/automation" },
-            { name: "Web/App Scraping", link: "/web-app Scraping" },
+            { name: "Web/App Scraping", link: "/web-app-scraping" },
           ],
         },
         {
