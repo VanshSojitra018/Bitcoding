@@ -32,11 +32,11 @@ const RequestText = ({
                       </span>{" "}
                     </h2>
                   </div>
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] text-gray-700 leading-[1.6] sm:leading-[1.7] md:leading-[1.8] w-full">
+                  <p className="text-[13px] sm:text-[14px] md:text-[16px] text-gray-700 leading-[1.6] sm:leading-[1.7] md:leading-[1.8] w-full">
                     {FirstParagraph}
                   </p>
                   <br />
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] text-gray-700 leading-[1.6] sm:leading-[1.7] md:leading-[1.8] w-full">
+                  <p className="text-[13px] sm:text-[14px] md:text-[16px] text-gray-700 leading-[1.6] sm:leading-[1.7] md:leading-[1.8] w-full">
                     {SecondParagraph}
                   </p>
                   <div className="flex items-center gap-[20px] sm:gap-[25px] md:gap-[30px] mt-[30px] sm:mt-[40px] md:mt-[50px] justify-center">

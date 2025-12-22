@@ -216,7 +216,7 @@ const Navbar = () => {
           <li key={index} className="relative group/sub">
             <a
               href={item.link}
-              className="flex items-center justify-between text-[16px] text-[#292f32] font-semibold px-[25px] py-[11px] w-full border-b border-[#eeeeee] hover:bg-blue-500 hover:text-white transition-colors duration-300"
+              className="flex items-center justify-between text-[16px] text-[#292f32] font-semibold px-[25px] py-[11px] w-full border-b border-[#eeeeee] hover:bg-[#1296df] hover:text-white transition-colors duration-300"
             >
               {item.name}
               {item.submenu && <FaAngleDown className="ml-3" />}
@@ -236,7 +236,7 @@ const Navbar = () => {
 
     return (
       <li key={menuKey} className="flex flex-col">
-        <div className={`flex items-center justify-between text-[#292f32] border-b-[2px] py-2 ${paddingClass} hover:text-blue-500 transition-colors duration-300`}>
+        <div className={`flex items-center justify-between text-[#292f32] border-b-[2px] py-2 ${paddingClass} hover:text-[#1296df] transition-colors duration-300`}>
           <a href={item.link} className="font-medium text-[17px]">
             {item.name}
           </a>
@@ -329,17 +329,17 @@ const Navbar = () => {
                                 <>
                                   <Link
                                     to={item.link}
-                                    className="flex items-center text-[16px] font-sans font-semibold text-[#292f32] py-[20px] relative capitalize group-hover:text-blue-500"
+                                    className="flex items-center text-[16px] font-sans font-semibold text-[#292f32] py-[20px] relative capitalize group-hover:text-[#1296df]"
                                   >
                                     {item.name}
-                                    <FaAngleDown className="ml-3 text-[#292f32] group-hover:text-blue-500" />
+                                    <FaAngleDown className="ml-3 text-[#292f32] group-hover:text-[#1296df]" />
                                   </Link>
                                   {renderDesktopSubmenu(item.submenu)}
                                 </>
                               ) : (
                                 <a
                                   href={item.link}
-                                  className="flex items-center text-[16px] font-sans font-semibold text-[#292f32] py-[20px] relative capitalize group-hover:text-blue-500"
+                                  className="flex items-center text-[16px] font-sans font-semibold text-[#292f32] py-[20px] relative capitalize group-hover:text-[#1296df]"
                                 >
                                   {item.name}
                                 </a>
@@ -352,7 +352,7 @@ const Navbar = () => {
                         <li className="relative mr-[40px] group md:mr-0 md2:-mr-2 md1:-mr-10 sm:-mr-28 sm:px-9">
                           <button
                             onClick={() => toggleMenu("isOpen")}
-                            className="flex items-center text-[30px] font-sans font-semibold text-blue-500 py-[20px] relative"
+                            className="flex items-center text-[30px] font-sans font-semibold text-[#1296df] py-[20px] relative"
                             aria-label="Open menu"
                           >
                             <IoMenu />
@@ -387,7 +387,7 @@ const Navbar = () => {
                             {/* Mobile Menu Items */}
                             <div className="mobile-menu block 2xl:hidden mb-3 overflow-visible text-[14px] xs:text-[15px] sm:text-[17px]">
                               <ul>
-                                <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 px-4 hover:text-blue-500 transition-colors duration-300">
+                                <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 px-4 hover:text-[#1296df] transition-colors duration-300">
                                   <Link
                                     to="/service"
                                     className="font-medium text-[17px]"
@@ -410,7 +410,7 @@ const Navbar = () => {
                                     menuState.isStarServicesOpen ? "max-h-96" : "max-h-0"
                                   }`}
                                 >
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a  className="font-medium text-[17px]">
                                       Star Services
                                     </a>
@@ -428,17 +428,17 @@ const Navbar = () => {
                                       menuState.isInsideStarOpen ? "max-h-60" : "max-h-0"
                                     }`}
                                   >
-                                    <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-16 hover:text-blue-500 transition-colors duration-300">
+                                    <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-16 hover:text-[#1296df] transition-colors duration-300">
                                       <a href="/ai-ml" className="font-medium text-[17px]">
                                         AI-ML
                                       </a>
                                     </li>
-                                    <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-16 hover:text-blue-500 transition-colors duration-300">
+                                    <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-16 hover:text-[#1296df] transition-colors duration-300">
                                       <a href="/Automation" className="font-medium text-[17px]">
                                         AutoMation
                                       </a>
                                     </li>
-                                    <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-16 hover:text-blue-500 transition-colors duration-300">
+                                    <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-16 hover:text-[#1296df] transition-colors duration-300">
                                       <a href="/web-app-scraping" className="font-medium text-[17px]">
                                         Web/App Scraping
                                       </a>
@@ -447,7 +447,7 @@ const Navbar = () => {
 
                                   {/* Digital Workplace */}
                                   <li className="flex flex-col">
-                                    <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                    <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                       <a  className="font-medium text-[17px]">
                                         Digital Workplace
                                       </a>
@@ -465,15 +465,15 @@ const Navbar = () => {
                                         menuState.isDigitalOpen ? "max-h-[1000px]" : "max-h-0"
                                       }`}
                                     >
-                                      <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px]">
+                                      <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px]">
                                         <a
                                           href="/Web-Development"
-                                          className="font-medium text-[16px] text-[#292f32] hover:text-blue-500 transition-colors duration-300"
+                                          className="font-medium text-[16px] text-[#292f32] hover:text-[#1296df] transition-colors duration-300"
                                         >
                                           Web Development
                                         </a>
                                       </li>
-                                      <li className="flex items-center py-2 pl-16 hover:text-blue-500 transition-colors duration-300 border-b-[2px]">
+                                      <li className="flex items-center py-2 pl-16 hover:text-[#1296df] transition-colors duration-300 border-b-[2px]">
                                         <a
                                           href="/Mobile-app-development"
                                           className="font-medium text-[16px]"
@@ -481,22 +481,22 @@ const Navbar = () => {
                                           Mobile App Development
                                         </a>
                                       </li>
-                                      <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px] transition-colors duration-300">
+                                      <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px] transition-colors duration-300">
                                         <a href="/UI-UX-Design" className="font-medium text-[16px]">
                                           UI/UX Design
                                         </a>
                                       </li>
-                                      <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500 transition-colors duration-300">
+                                      <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df] transition-colors duration-300">
                                         <a href="/SEO" className="font-medium text-[16px]">
                                           SEO
                                         </a>
                                       </li>
-                                      <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px] transition-colors duration-300">
+                                      <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px] transition-colors duration-300">
                                         <a href="/DevOps" className="font-medium text-[16px]">
                                           DevOps
                                         </a>
                                       </li>
-                                      <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px] transition-colors duration-300">
+                                      <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px] transition-colors duration-300">
                                         <a
                                           href="/Dedicated-Development-Team"
                                           className="font-medium text-[16px]"
@@ -509,7 +509,7 @@ const Navbar = () => {
 
                                   {/* Platform */}
                                   <li className="flex flex-col">
-                                    <div className="flex items-center justify-between text-[#292f32] py-2 pl-8 hover:text-blue-500 transition-colors duration-300 border-b-[2px]">
+                                    <div className="flex items-center justify-between text-[#292f32] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300 border-b-[2px]">
                                       <span className="font-medium text-[17px]">Platform</span>
                                       <button onClick={() => toggleMenu("isPlatformOpen")}>
                                         <FaPlus
@@ -525,15 +525,15 @@ const Navbar = () => {
                                         menuState.isPlatformOpen ? "max-h-[2000px]" : "max-h-0"
                                       }`}
                                     >
-                                      <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px]">
+                                      <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px]">
                                         <a
                                           href="/Web-Development"
-                                          className="font-medium text-[16px] text-[#292f32] hover:text-blue-500 transition-colors duration-300"
+                                          className="font-medium text-[16px] text-[#292f32] hover:text-[#1296df] transition-colors duration-300"
                                         >
                                           Web Development
                                         </a>
                                       </li>
-                                      <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px] transition-colors duration-300">
+                                      <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px] transition-colors duration-300">
                                         <a
                                           href="/Mobile-app-development"
                                           className="font-medium text-[16px]"
@@ -541,22 +541,22 @@ const Navbar = () => {
                                           Mobile App Development
                                         </a>
                                       </li>
-                                      <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px] transition-colors duration-300">
+                                      <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px] transition-colors duration-300">
                                         <a href="/UI-UX-Design" className="font-medium text-[16px]">
                                           UI/UX Design
                                         </a>
                                       </li>
-                                      <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px] transition-colors duration-300">
+                                      <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px] transition-colors duration-300">
                                         <a href="/SEO" className="font-medium text-[16px]">
                                           SEO
                                         </a>
                                       </li>
-                                      <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px] transition-colors duration-300">
+                                      <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px] transition-colors duration-300">
                                         <a href="/DevOps" className="font-medium text-[16px]">
                                           DevOps
                                         </a>
                                       </li>
-                                      <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px] transition-colors duration-300">
+                                      <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px] transition-colors duration-300">
                                         <a
                                           href="/Dedicated-Development-Team"
                                           className="font-medium text-[16px]"
@@ -569,7 +569,7 @@ const Navbar = () => {
                                 </ul>
 
                                 {/* Industry */}
-                                <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 px-4 hover:text-blue-500 transition-colors duration-300">
+                                <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 px-4 hover:text-[#1296df] transition-colors duration-300">
                                   <a href="/Industry" className="font-medium text-[17px]">
                                     Industry
                                   </a>
@@ -587,27 +587,27 @@ const Navbar = () => {
                                     menuState.isStarIndOpen ? "max-h-96" : "max-h-0"
                                   }`}
                                 >
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/Fintech" className="font-medium text-[17px]">
                                       Fintech
                                     </a>
                                   </li>
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/E-Commerce" className="font-medium text-[17px]">
                                       E-Commerce
                                     </a>
                                   </li>
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/Education" className="font-medium text-[17px]">
                                       Education
                                     </a>
                                   </li>
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/Healthcare" className="font-medium text-[17px]">
                                       Healthcare
                                     </a>
                                   </li>
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/Entertainment" className="font-medium text-[17px]">
                                       Entertainment
                                     </a>
@@ -616,7 +616,7 @@ const Navbar = () => {
 
                                 {/* Technology */}
                                 <li className="flex flex-col">
-                                  <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 px-4 hover:text-blue-500 transition-colors duration-300">
+                                  <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 px-4 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/Technology" className="font-medium text-[17px]">
                                       Technology
                                     </a>
@@ -636,7 +636,7 @@ const Navbar = () => {
                                   >
                                     {/* Backend */}
                                     <li className="flex flex-col">
-                                      <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                      <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                         <a href="/Backend" className="font-medium text-[17px]">
                                           Backend
                                         </a>
@@ -654,12 +654,12 @@ const Navbar = () => {
                                           menuState.isInsideStarOpen ? "max-h-[500px]" : "max-h-0"
                                         }`}
                                       >
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a href="/Python" className="font-medium text-[16px]">
                                             Python
                                           </a>
                                         </li>
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a href="/Nord js" className="font-medium text-[16px]">
                                             Nord js
                                           </a>
@@ -669,7 +669,7 @@ const Navbar = () => {
 
                                     {/* Frontend */}
                                     <li className="flex flex-col">
-                                      <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                      <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                         <a href="/Frontend" className="font-medium text-[17px]">
                                           Frontend
                                         </a>
@@ -687,12 +687,12 @@ const Navbar = () => {
                                           menuState.isDigitalOpen ? "max-h-[800px]" : "max-h-0"
                                         }`}
                                       >
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a href="/React Js" className="font-medium text-[16px]">
                                             React Js
                                           </a>
                                         </li>
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a href="/Next Js" className="font-medium text-[16px]">
                                             Next Js
                                           </a>
@@ -702,7 +702,7 @@ const Navbar = () => {
 
                                     {/* Mobile */}
                                     <li className="flex flex-col">
-                                      <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                      <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                         <a href="/Mobile" className="font-medium text-[17px]">
                                           Mobile
                                         </a>
@@ -720,7 +720,7 @@ const Navbar = () => {
                                           menuState.isPlatformOpen ? "max-h-[1000px]" : "max-h-0"
                                         }`}
                                       >
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a
                                             href="/IOS Native"
                                             className="font-medium text-[16px] text-[#292f32]"
@@ -728,7 +728,7 @@ const Navbar = () => {
                                             IOS Native
                                           </a>
                                         </li>
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a
                                             href="/Android Native"
                                             className="font-medium text-[16px] text-[#292f32]"
@@ -736,7 +736,7 @@ const Navbar = () => {
                                             Android Native
                                           </a>
                                         </li>
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a
                                             href="/Flutter"
                                             className="font-medium text-[16px] text-[#292f32]"
@@ -749,7 +749,7 @@ const Navbar = () => {
 
                                     {/* Cloud */}
                                     <li className="flex flex-col">
-                                      <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                      <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                         <a href="/Cloud" className="font-medium text-[17px]">
                                           Cloud
                                         </a>
@@ -767,7 +767,7 @@ const Navbar = () => {
                                           menuState.isCloudOpen ? "max-h-[1000px]" : "max-h-0"
                                         }`}
                                       >
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a
                                             href="/Azure"
                                             className="font-medium text-[16px] text-[#292f32]"
@@ -775,7 +775,7 @@ const Navbar = () => {
                                             Azure
                                           </a>
                                         </li>
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a
                                             href="/AWS"
                                             className="font-medium text-[16px] text-[#292f32]"
@@ -783,7 +783,7 @@ const Navbar = () => {
                                             AWS
                                           </a>
                                         </li>
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a
                                             href="/GCP"
                                             className="font-medium text-[16px] text-[#292f32]"
@@ -796,7 +796,7 @@ const Navbar = () => {
 
                                     {/* Q/A */}
                                     <li className="flex flex-col">
-                                      <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                      <div className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                         <a href="/Q/A" className="font-medium text-[17px]">
                                           Q/A
                                         </a>
@@ -814,7 +814,7 @@ const Navbar = () => {
                                           menuState.isQAOpen ? "max-h-[1000px]" : "max-h-0"
                                         }`}
                                       >
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a
                                             href="/Automation Testing"
                                             className="font-medium text-[16px] text-[#292f32]"
@@ -822,7 +822,7 @@ const Navbar = () => {
                                             Automation Testing
                                           </a>
                                         </li>
-                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-blue-500">
+                                        <li className="flex items-center py-2 pl-16 border-b-[2px] hover:text-[#1296df]">
                                           <a
                                             href="/Software Testing"
                                             className="font-medium text-[16px] text-[#292f32]"
@@ -835,7 +835,7 @@ const Navbar = () => {
 
                                     {/* Platform */}
                                     <li className="flex flex-col">
-                                      <div className="flex items-center justify-between text-[#292f32] py-2 pl-8 hover:text-blue-500 transition-colors duration-300 border-b-[2px]">
+                                      <div className="flex items-center justify-between text-[#292f32] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300 border-b-[2px]">
                                         <span className="font-medium text-[17px]">Platform</span>
                                         <button onClick={() => toggleMenu("isPlatform1Open")}>
                                           <FaPlus
@@ -851,20 +851,20 @@ const Navbar = () => {
                                           menuState.isPlatform1Open ? "max-h-[2000px]" : "max-h-0"
                                         }`}
                                       >
-                                        <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px]">
+                                        <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px]">
                                           <a
                                             href="/Shopify"
-                                            className="font-medium text-[16px] text-[#292f32] hover:text-blue-500 transition-colors duration-300"
+                                            className="font-medium text-[16px] text-[#292f32] hover:text-[#1296df] transition-colors duration-300"
                                           >
                                             Shopify
                                           </a>
                                         </li>
-                                        <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px] transition-colors duration-300">
+                                        <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px] transition-colors duration-300">
                                           <a href="/Wordpress" className="font-medium text-[16px]">
                                             Wordpress
                                           </a>
                                         </li>
-                                        <li className="flex items-center py-2 pl-16 hover:text-blue-500 border-b-[2px] transition-colors duration-300">
+                                        <li className="flex items-center py-2 pl-16 hover:text-[#1296df] border-b-[2px] transition-colors duration-300">
                                           <a href="/E-commerce" className="font-medium text-[16px]">
                                             E-commerce
                                           </a>
@@ -875,7 +875,7 @@ const Navbar = () => {
                                 </li>
 
                                 {/* Our Solutions */}
-                                <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 px-4 hover:text-blue-500 transition-colors duration-300">
+                                <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 px-4 hover:text-[#1296df] transition-colors duration-300">
                                   <a href="/Our Solutions" className="font-medium text-[17px]">
                                     Our Solutions
                                   </a>
@@ -893,27 +893,27 @@ const Navbar = () => {
                                     menuState.isOurOpen ? "max-h-96" : "max-h-0"
                                   }`}
                                 >
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/Funface" className="font-medium text-[17px]">
                                       Funface
                                     </a>
                                   </li>
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/Classdekho" className="font-medium text-[17px]">
                                       Classdekho
                                     </a>
                                   </li>
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/Aftermedi" className="font-medium text-[17px]">
                                       Aftermedi
                                     </a>
                                   </li>
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/Billa-Patel-Samaj" className="font-medium text-[17px]">
                                       Billa-Patel-Samaj
                                     </a>
                                   </li>
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/Trading-Wiza" className="font-medium text-[17px]">
                                       Trading-Wiza
                                     </a>
@@ -921,7 +921,7 @@ const Navbar = () => {
                                 </ul>
 
                                 {/* How We Work */}
-                                <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 px-4 hover:text-blue-500 transition-colors duration-300">
+                                <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 px-4 hover:text-[#1296df] transition-colors duration-300">
                                   <a href="/How-We-Work" className="font-medium text-[17px]">
                                     How We Work
                                   </a>
@@ -939,24 +939,24 @@ const Navbar = () => {
                                     menuState.isWorkOpen ? "max-h-96" : "max-h-0"
                                   }`}
                                 >
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/How-We-Work" className="font-medium text-[17px]">
                                       How We Work
                                     </a>
                                   </li>
-                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-blue-500 transition-colors duration-300">
+                                  <li className="flex items-center justify-between text-[#292f32] border-b-[2px] py-2 pl-8 hover:text-[#1296df] transition-colors duration-300">
                                     <a href="/Careers" className="font-medium text-[17px]">
                                       Careers
                                     </a>
                                   </li>
                                 </ul>
 
-                                <li className="text-[#292f32] border-b-[2px] py-2 pl-4 hover:text-blue-500 transition-colors duration-300">
+                                <li className="text-[#292f32] border-b-[2px] py-2 pl-4 hover:text-[#1296df] transition-colors duration-300">
                                   <a href="/About-Us" className="font-medium text-[17px]">
                                     About Us
                                   </a>
                                 </li>
-                                <li className="text-[#292f32] border-b-[2px] py-2 pl-4 hover:text-blue-500 transition-colors duration-300">
+                                <li className="text-[#292f32] border-b-[2px] py-2 pl-4 hover:text-[#1296df] transition-colors duration-300">
                                   <a href="/Blog" className="font-medium text-[17px]">
                                     Blog
                                   </a>
@@ -970,7 +970,7 @@ const Navbar = () => {
                               <ul className="mt-5">
                                 <li className="mb-[15px] flex items-center">
                                   <div className="open-contact-logo mr-5">
-                                    <IoLocationOutline className="text-blue-500" />
+                                    <IoLocationOutline className="text-[#1296df]" />
                                   </div>
                                   <div className="open-contact-text">
                                     <a
@@ -985,7 +985,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="mb-[15px] flex items-center">
                                   <div className="open-contact-logo mr-5">
-                                    <FiMail className="text-blue-500" />
+                                    <FiMail className="text-[#1296df]" />
                                   </div>
                                   <div className="open-contact-text">
                                     <a
@@ -998,7 +998,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="mb-[15px] flex items-center">
                                   <div className="open-contact-logo mr-5">
-                                    <FaCalendar className="text-blue-500" />
+                                    <FaCalendar className="text-[#1296df]" />
                                   </div>
                                   <div className="open-contact-text">
                                     <span className="text-[#585858] font-semibold">
@@ -1008,7 +1008,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="mb-[15px] flex items-center">
                                   <div className="open-contact-logo mr-5">
-                                    <GoClock className="text-blue-500" />
+                                    <GoClock className="text-[#1296df]" />
                                   </div>
                                   <div className="open-contact-text">
                                     <span className="text-[#585858] font-semibold">
@@ -1018,7 +1018,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="mb-[15px] flex items-center">
                                   <div className="open-contact-logo mr-5">
-                                    <FaPhoneVolume className="text-blue-500" />
+                                    <FaPhoneVolume className="text-[#1296df]" />
                                   </div>
                                   <div className="open-contact-text">
                                     <a

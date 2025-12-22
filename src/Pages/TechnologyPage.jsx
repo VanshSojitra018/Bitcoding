@@ -21,13 +21,10 @@ import aws from "../assets/aws.png";
 import azure from "../assets/azure.png";
 import ibm from "../assets/ibm.png";
 
-
-
-
-const TechnologyPage = () => {
+const TechnologyPage = ({ value = null }) => {
   const [activeTab, setActiveTab] = useState("framework");
 
-  const data = {
+  const defaultData = {
     framework: [
       { id: 1, icon: API, alt: "API", title: "FastAPI" },
       { id: 2, icon: GPT, alt: "GPT", title: "OpenAI" },
@@ -56,15 +53,16 @@ const TechnologyPage = () => {
       { id: 5, icon: aws, alt: "aws", title: "AWS" },
       { id: 6, icon: azure, alt: "azure", title: "Azure" },
       { id: 7, icon: ibm, alt: "ibm", title: "IBM Cloud" },
-
     ],
   };
+
+  const data = value ?? defaultData;
 
   return (
     <>
       <section className="pt-[100px]">
         <div className="container mx-auto px-4 w-full">
-          {/* TITLE */}
+
           <div className="section-title text-center relative z-50 mb-[30px] mt-[-7px]">
             <h2 className="text-[40px] max-[767px]:text-[28px] max-[479px]:text-[24px] text-[#292f32] leading-[125%] font-bold capitalize">
               Technologies
@@ -76,74 +74,29 @@ const TechnologyPage = () => {
             </p>
           </div>
 
-          {/* BUTTONS */}
           <ul className="flex flex-wrap justify-center gap-4 max-[767px]:gap-2 list-none">
-            <li className="nav-item">
-              <button
-                type="button"
-                onClick={() => setActiveTab("framework")}
-                className={`border-[2px] rounded-[5px] px-[18px] py-[10px] max-[767px]:px-[12px] max-[767px]:py-[8px] max-[767px]:text-[14px] bg-transparent font-medium ${
-                  activeTab === "framework"
-                    ? "border-[#1296df] text-[#1296df]"
-                    : "border-[#585858] text-[#585858]"
-                }`}
-              >
-                Frameworks & Libraries
-              </button>
-            </li>
-
-            <li className="nav-item">
-              <button
-                type="button"
-                onClick={() => setActiveTab("database")}
-                className={`border-[2px] rounded-[5px] px-[18px] py-[10px] max-[767px]:px-[12px] max-[767px]:py-[8px] max-[767px]:text-[14px] bg-transparent font-medium ${
-                  activeTab === "database"
-                    ? "border-[#1296df] text-[#1296df]"
-                    : "border-[#585858] text-[#585858]"
-                }`}
-              >
-                Database
-              </button>
-            </li>
-
-            <li className="nav-item">
-              <button
-                type="button"
-                onClick={() => setActiveTab("tools")}
-                className={`border-[2px] rounded-[5px] px-[18px] py-[10px] max-[767px]:px-[12px] max-[767px]:py-[8px] max-[767px]:text-[14px] bg-transparent font-medium ${
-                  activeTab === "tools"
-                    ? "border-[#1296df] text-[#1296df]"
-                    : "border-[#585858] text-[#585858]"
-                }`}
-              >
-                Tools
-              </button>
-            </li>
-
-            <li className="nav-item">
-              <button
-                type="button"
-                onClick={() => setActiveTab("platforms")}
-                className={`border-[2px] rounded-[5px] px-[18px] py-[10px] max-[767px]:px-[12px] max-[767px]:py-[8px] max-[767px]:text-[14px] bg-transparent font-medium ${
-                  activeTab === "platforms"
-                    ? "border-[#1296df] text-[#1296df]"
-                    : "border-[#585858] text-[#585858]"
-                }`}
-              >
-                Platforms
-              </button>
-            </li>
+            {Object.keys(data).map((key) => (
+              <li className="nav-item" key={key}>
+                <button
+                  type="button"
+                  onClick={() => setActiveTab(key)}
+                  className={`border-[2px] rounded-[5px] px-[18px] py-[10px] max-[767px]:px-[12px] max-[767px]:py-[8px] max-[767px]:text-[14px] bg-transparent font-medium ${
+                    activeTab === key
+                      ? "border-[#1296df] text-[#1296df]"
+                      : "border-[#585858] text-[#585858]"
+                  }`}
+                >
+                  {key.charAt(0).toUpperCase() + key.slice(1)}
+                </button>
+              </li>
+            ))}
           </ul>
 
-          {/* BOXES */}
           <div
-            className="grid grid-cols-1 max-[990px]:block sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 p-5 mt-[30px] justify-center"
-            style={{
-              columnGap: "64px",
-              rowGap: "40px",
-            }}
+            className="grid grid-cols-1 max-[990px]:block sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 p-5 mt-[30px] "
+            style={{ columnGap: "64px", rowGap: "40px" }}
           >
-            {data[activeTab].map((item) => (
+            {data[activeTab]?.map((item) => (
               <div
                 key={item.id}
                 style={{ width: "230px" }}
@@ -162,6 +115,7 @@ const TechnologyPage = () => {
               </div>
             ))}
           </div>
+
         </div>
       </section>
     </>

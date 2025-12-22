@@ -65,7 +65,7 @@ const OurValuePage = ({
 
             {/* LEFT SIDE */}
             <div className="w-full lg:w-1/2 px-4">
-              <div className="lg1:sticky lg1:top-[120px] max-w-[520px]">
+              <div className="lg1:sticky lg1:top-[120px] ">
 
                 <span className="text-white mb-[10px] inline-block font-medium uppercase text-[12px] sm:text-[14px]">
                   {label}
