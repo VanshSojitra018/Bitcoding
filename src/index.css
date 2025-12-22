@@ -108,7 +108,6 @@ ul {
   top: 0; /* stays aligned, no movement */
 }
 
-
 .icon::before {
   position: absolute;
   top: 50%;
@@ -124,7 +123,6 @@ ul {
   transition: all 0.3s ease-in-out;
 }
 
-
 .mySwiper {
   overflow: hidden !important;
 }
@@ -137,7 +135,7 @@ ul {
   flex-shrink: 0 !important;
   width: auto !important;
 }
-.ct-section::before{
+.ct-section::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -203,7 +201,6 @@ ul {
   opacity: 1;
 }
 
-
 .project-content::before {
   position: absolute;
   top: 50%;
@@ -212,7 +209,13 @@ ul {
   width: 6px;
   height: 58px;
   content: "";
-  background: linear-gradient(172deg, #1296DF 6.23%, #1F5B7C 131.99%, #22506A 146.31%, #292F32 165.42%);
+  background: linear-gradient(
+    172deg,
+    #1296df 6.23%,
+    #1f5b7c 131.99%,
+    #22506a 146.31%,
+    #292f32 165.42%
+  );
   transition: all 0.3s ease-in-out;
   opacity: 0.8;
 }
@@ -222,7 +225,7 @@ ul {
   opacity: 1;
 }
 
-.count-number::before{
+.count-number::before {
   content: attr(data-count);
   position: absolute;
   color: #ebecf2;

@@ -27,7 +27,6 @@ const MobileAppDevelopment = () => {
         }
       />
       <Silder variant="light" />
-      <CoreOffering />
       <HowItWork
         maintitle="how it works"
         subtitle="Our Mobile"
@@ -59,6 +58,8 @@ const MobileAppDevelopment = () => {
           },
         ]}
       />
+      <CoreOffering />
+
       <Faq
         showFirstTitle={false}
         showSecondTitle={true}
